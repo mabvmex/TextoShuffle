@@ -1,23 +1,25 @@
-let about = $(".me");
+let about = $("#me");
 let shuffle = $(".shuffleEffect");
-let textEffect = $("#textEffect");
+let algo = $(".algo");
+let textEffect = $(".textEffect");
 
 // let Page = $(".PageTitle")
-let aboutMe = ['Fullstack Web developer', '@mabvmex', 'mabvmex@gmail.com', 'Cel. +52 5511223344', 'México'];
+let aboutMe = ['Fullstack Web developer', '@mabvmex', 'mabvmex@gmail.com', 'Cel. +52 5514608234', 'México'];
 let wordsCloud = ['HTML5', 'CCS3', 'Flexbox', 'Bootstrap', 'Responsive Design', 
                 'Javascript', 'JQuery', 'Typescript', 'ES6', 'Angular 7+', 'NodeJS',
-                'MongoDB', 'Express', 'Git', 'Github', 'API', 'Windows', 'Linux', 'MacOS', 'VMware'];
+                'MongoDB', 'Express', 'Git', 'Github', 'API', 'Windows OS', 'GNU/Linux', 'MacOS', 'Virtualización'];
 let a = 0;
 let b = 0;
 
 about.text(aboutMe[0]);
 shuffle.text(wordsCloud[0]);
-// Page.shuffleLetters();
+
+
 
 textEffect.on("keypress", function (e) {
 
-    if (e.keyCode == 13) {
-        shuffle.shuffleLetters({
+    if (e.keyCode == 13 ) {
+        algo.shuffleLetters({
             "text": textEffect.val()
         });
     }
