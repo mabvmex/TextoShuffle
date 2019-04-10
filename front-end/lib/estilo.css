@@ -1,5 +1,9 @@
 .fixedSize {
     line-height: 2;
     margin: auto;
-    /* height: 50px; */
+    height: 80px;
+}
+
+.centrar {
+    text-align: center;
 }
