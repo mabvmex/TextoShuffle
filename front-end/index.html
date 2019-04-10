@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Efecto aleatorio</title>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Efecto aleatorio</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- Estilos de la master -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/estilo.css" />
 
-  <!-- Estilos de la master -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="lib/estilo.css">
+    <!-- Estilos de los recursos adicionales -->
+  </head>
 
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
-  <!-- Estilos de los recursos adicionales -->
-</head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1 class="PageTitle">Miguel Barrera</h1>
+        <p class="lead shuffleEffect fixedSize">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+      </div>
 
-<body>
-  <div class="container">
-    <div class="page-header">
-      <h1>Miguel Barrera</h1>
-      <p class="lead">Esto es una prueba de texto aleatorio.</p>
+      <!-- Editar desde aquí  -->
+      <div>
+        <input
+          type="text"
+          id="textEffect"
+          placeholder="Prueba tú mismo..."
+          class="form-control fixedSize"
+        />
+      </div>
+      <!-- Hasta aquí modificaremos -->
     </div>
 
-    <!-- Editar desde aquí  -->
+    <!-- Librerías adicionales -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Hasta aquí modificaremos -->
-  </div>
+    <!-- Librerías de plugins -->
+    <script src="plugins/shuffleLettersPlugin/jquery.shuffleLetters.js"></script>
 
-  <!-- Librerías adicionales -->
-  <script src="lib/jquery.min.js"> </script>
-  <script src="bootstrap/js/bootstrap.min.js"> </script>
-  
-  <!-- Librerías de plugins -->
-  <script src="plugins/shuffleLettersPlugin/jquery.shuffleLetters.js"></script>
-
-  <!-- Archivo personalizado de Javascript -->
-  <script src="lib/curso.js"></script>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"> </script> -->
-  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"> </script> -->
-
-</body>
-
+    <!-- Archivo personalizado de Javascript -->
+    <script src="lib/effect.js"></script>
+  </body>
 </html>
