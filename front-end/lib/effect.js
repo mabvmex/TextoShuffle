@@ -1,15 +1,16 @@
+let about = $(".me");
 let shuffle = $(".shuffleEffect");
 let textEffect = $("#textEffect");
-let about = $(".me");
 
 // let Page = $(".PageTitle")
-let aboutMe = ['@mabvmex', 'mabvmex@gmail.com'];
-let wordsCloud = ['Fullstack Web developer', 'Javascript', 'Angular 7+',
-    'NodeJS', 'MongoDB', 'ios Developer',
-];
+let aboutMe = ['Fullstack Web developer', '@mabvmex', 'mabvmex@gmail.com', 'Cel. +52 5511223344', 'México'];
+let wordsCloud = ['HTML5', 'CCS3', 'Flexbox', 'Bootstrap', 'Responsive Design', 
+                'Javascript', 'JQuery', 'Typescript', 'ES6', 'Angular 7+', 'NodeJS',
+                'MongoDB', 'Express', 'Git', 'Github', 'API', 'Windows', 'Linux', 'MacOS', 'VMware'];
 let a = 0;
 let b = 0;
 
+about.text(aboutMe[0]);
 shuffle.text(wordsCloud[0]);
 // Page.shuffleLetters();
 
@@ -26,22 +27,22 @@ setInterval(function () {
 
     a++;
 
-    if (a >= wordsCloud.length) {
+    if (a >= aboutMe.length) {
         a = 0;
     }
-    shuffle.shuffleLetters({
-        "text": wordsCloud[a]
+    about.shuffleLetters({
+        "text": aboutMe[a]
     });
-}, 3000)
+}, 2500)
 
 
 setInterval(function () {
 
     b++;
-    if (b >= aboutMe.length) {
+    if (b >= wordsCloud.length) {
         b = 0;
     }
-    about.shuffleLetters({
-        "text": aboutMe[b]
+    shuffle.shuffleLetters({
+        "text": wordsCloud[b]
     });
 }, 4000)
